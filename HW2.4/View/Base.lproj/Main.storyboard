@@ -86,7 +86,7 @@
         <!--Настройки-->
         <scene sceneID="8Gd-5y-WIO">
             <objects>
-                <viewController id="Oc7-4i-8UV" customClass="ViewController" customModule="HW2_4" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Oc7-4i-8UV" customClass="ViewControllerSetting" customModule="HW2_4" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UMr-gS-SIE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -99,6 +99,7 @@
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
                                 <connections>
+                                    <action selector="toWhite:" destination="Oc7-4i-8UV" eventType="touchUpInside" id="2CI-ON-1us"/>
                                     <action selector="toWhite:" destination="QNh-H2-el1" eventType="touchUpInside" id="fGt-PZ-MKs"/>
                                 </connections>
                             </button>
@@ -110,6 +111,7 @@
                                     <color key="titleColor" systemColor="systemBackgroundColor"/>
                                 </state>
                                 <connections>
+                                    <action selector="toBlack:" destination="Oc7-4i-8UV" eventType="touchUpInside" id="RUi-hc-Vkj"/>
                                     <action selector="toBlack:" destination="QNh-H2-el1" eventType="touchUpInside" id="zZA-6L-h5r"/>
                                 </connections>
                             </button>
@@ -121,6 +123,7 @@
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
                                 <connections>
+                                    <action selector="toGreen:" destination="Oc7-4i-8UV" eventType="touchUpInside" id="Bkr-mA-E1r"/>
                                     <action selector="toGreen:" destination="QNh-H2-el1" eventType="touchUpInside" id="ynd-jf-iLh"/>
                                 </connections>
                             </button>
