@@ -11,7 +11,7 @@
         <!--Про меня-->
         <scene sceneID="aG3-Nj-R0V">
             <objects>
-                <viewController id="zF9-Wn-Sbr" sceneMemberID="viewController">
+                <viewController id="zF9-Wn-Sbr" customClass="ViewControlletAboutMe" customModule="HW2_4" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6HV-zl-xa9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -54,6 +54,11 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Про меня" image="person" catalog="system" id="vOO-tQ-1Y6"/>
+                    <connections>
+                        <outlet property="email" destination="N0M-7x-qoK" id="vTd-qz-zeX"/>
+                        <outlet property="name" destination="YUs-KL-mgZ" id="ltc-9w-gNL"/>
+                        <outlet property="phone" destination="sTQ-Hx-czu" id="MGm-0j-ubg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4lE-6z-IyL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -81,7 +86,7 @@
         <!--Настройки-->
         <scene sceneID="8Gd-5y-WIO">
             <objects>
-                <viewController id="Oc7-4i-8UV" sceneMemberID="viewController">
+                <viewController id="Oc7-4i-8UV" customClass="ViewController" customModule="HW2_4" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UMr-gS-SIE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -93,6 +98,9 @@
                                 <state key="normal" title="   Белый фон  ">
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="toWhite:" destination="QNh-H2-el1" eventType="touchUpInside" id="fGt-PZ-MKs"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yRe-m8-c3X">
                                 <rect key="frame" x="92" y="364.5" width="191" height="51"/>
@@ -101,6 +109,9 @@
                                 <state key="normal" title=" Темный фон ">
                                     <color key="titleColor" systemColor="systemBackgroundColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="toBlack:" destination="QNh-H2-el1" eventType="touchUpInside" id="zZA-6L-h5r"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RfM-9H-L8o">
                                 <rect key="frame" x="91.5" y="199.5" width="192" height="51"/>
@@ -109,6 +120,9 @@
                                 <state key="normal" title="Зеленый фон">
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="toGreen:" destination="QNh-H2-el1" eventType="touchUpInside" id="ynd-jf-iLh"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="zLG-3O-MeH"/>
@@ -125,13 +139,14 @@
                     <tabBarItem key="tabBarItem" title="Настройки" image="gearshape" catalog="system" id="MjG-38-AIu"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kd6-Tc-AeG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="QNh-H2-el1" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="189.59999999999999" y="694.90254872563719"/>
         </scene>
         <!--Образование-->
         <scene sceneID="ifY-qy-Ola">
             <objects>
-                <viewController id="h0C-ig-vm9" sceneMemberID="viewController">
+                <viewController id="h0C-ig-vm9" customClass="ViewControllerAducation" customModule="HW2_4" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hgu-fZ-OX2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -182,6 +197,12 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Образование" image="graduationcap" catalog="system" id="Udy-zB-NVU"/>
+                    <connections>
+                        <outlet property="language1" destination="TNb-EH-NJh" id="wRl-IS-E2I"/>
+                        <outlet property="language2" destination="WLD-23-L8X" id="vmf-GS-I3T"/>
+                        <outlet property="school" destination="mvj-JX-3e5" id="gHM-eY-Bju"/>
+                        <outlet property="university" destination="zCp-ep-bcB" id="ttb-3Q-OqN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w0W-32-yVy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
