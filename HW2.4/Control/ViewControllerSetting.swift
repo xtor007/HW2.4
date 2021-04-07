@@ -16,7 +16,7 @@ class ViewControllerSetting: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         forFix.text = String(nowColor)
-
+        forFix.text = "nmbjbvmbv"
         // Do any additional setup after loading the view.
     }
     

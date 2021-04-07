@@ -46,5 +46,30 @@ class ViewControllerAducation: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func reload(_ sender: Any) {
+        colorA = BackgroundBuffer.color
+        if colorA == 0 {
+            view.backgroundColor = UIColor.green
+            school.textColor = UIColor.black
+            university.textColor = UIColor.black
+            language1.textColor = UIColor.black
+            language2.textColor = UIColor.black
+        }
+        if colorA == 1 {
+            view.backgroundColor = UIColor.white
+            school.textColor = UIColor.black
+            university.textColor = UIColor.black
+            language1.textColor = UIColor.black
+            language2.textColor = UIColor.black
+        }
+        if colorA == 2 {
+            view.backgroundColor = UIColor.black
+            school.textColor = UIColor.white
+            university.textColor = UIColor.white
+            language1.textColor = UIColor.white
+            language2.textColor = UIColor.white
+        }
+    }
+    
 
 }

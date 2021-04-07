@@ -44,11 +44,20 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M5q-Ky-dKz">
+                                <rect key="frame" x="315" y="559" width="44" height="46"/>
+                                <state key="normal" image="repeat" catalog="system"/>
+                                <connections>
+                                    <action selector="reload:" destination="zF9-Wn-Sbr" eventType="touchUpInside" id="C25-qm-VXn"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="sy2-5J-EhE"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                         <constraints>
+                            <constraint firstItem="sy2-5J-EhE" firstAttribute="trailing" secondItem="M5q-Ky-dKz" secondAttribute="trailing" constant="16" id="B13-KK-59T"/>
                             <constraint firstItem="jj9-Pg-I6I" firstAttribute="width" secondItem="6HV-zl-xa9" secondAttribute="width" multiplier="0.64" id="DnY-3t-RxN"/>
+                            <constraint firstItem="sy2-5J-EhE" firstAttribute="bottom" secondItem="M5q-Ky-dKz" secondAttribute="bottom" constant="13" id="FMk-RP-t51"/>
                             <constraint firstItem="jj9-Pg-I6I" firstAttribute="centerX" secondItem="sy2-5J-EhE" secondAttribute="centerX" id="Fg5-no-SjM"/>
                             <constraint firstItem="YUs-KL-mgZ" firstAttribute="top" secondItem="jj9-Pg-I6I" secondAttribute="bottom" constant="39" id="Fzt-kq-8Ma"/>
                             <constraint firstItem="jj9-Pg-I6I" firstAttribute="height" secondItem="6HV-zl-xa9" secondAttribute="height" multiplier="0.349325" id="GmS-Sh-o6o"/>
@@ -206,14 +215,23 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XLF-L2-wMN">
+                                <rect key="frame" x="315" y="554" width="44" height="46"/>
+                                <state key="normal" image="repeat" catalog="system"/>
+                                <connections>
+                                    <action selector="reload:" destination="h0C-ig-vm9" eventType="touchUpInside" id="qBI-s7-NON"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="GIO-yF-kyM"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                         <constraints>
                             <constraint firstItem="Jb7-ms-Eiu" firstAttribute="centerX" secondItem="GIO-yF-kyM" secondAttribute="centerX" id="1yR-mx-rwy"/>
                             <constraint firstItem="zCp-ep-bcB" firstAttribute="top" secondItem="mvj-JX-3e5" secondAttribute="bottom" constant="8" symbolic="YES" id="72G-uq-0OM"/>
+                            <constraint firstItem="GIO-yF-kyM" firstAttribute="bottom" secondItem="XLF-L2-wMN" secondAttribute="bottom" constant="18" id="AfH-zk-9l5"/>
                             <constraint firstItem="TNb-EH-NJh" firstAttribute="leading" secondItem="GIO-yF-kyM" secondAttribute="leading" constant="7" id="GaD-PX-m9y"/>
                             <constraint firstItem="zCp-ep-bcB" firstAttribute="leading" secondItem="GIO-yF-kyM" secondAttribute="leading" constant="7" id="HDr-1Y-zcS"/>
+                            <constraint firstItem="GIO-yF-kyM" firstAttribute="trailing" secondItem="XLF-L2-wMN" secondAttribute="trailing" constant="16" id="HJ1-mW-Gdn"/>
                             <constraint firstItem="TNb-EH-NJh" firstAttribute="top" secondItem="zCp-ep-bcB" secondAttribute="bottom" constant="8" symbolic="YES" id="Lp8-pX-aq5"/>
                             <constraint firstItem="mvj-JX-3e5" firstAttribute="top" secondItem="Jb7-ms-Eiu" secondAttribute="bottom" constant="29" id="Rmx-ye-oJ4"/>
                             <constraint firstItem="WLD-23-L8X" firstAttribute="leading" secondItem="GIO-yF-kyM" secondAttribute="leading" constant="7" id="caJ-hd-Bst"/>
@@ -244,6 +262,7 @@
         <image name="gearshape" catalog="system" width="128" height="121"/>
         <image name="graduationcap" catalog="system" width="128" height="106"/>
         <image name="person" catalog="system" width="128" height="117"/>
+        <image name="repeat" catalog="system" width="128" height="99"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

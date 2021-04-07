@@ -42,4 +42,27 @@ class ViewControllerAboutMe: UIViewController {
         }
         // Do any additional setup after loading the view.
     }
+    
+    @IBAction func reload(_ sender: Any) {
+        colorAM = BackgroundBuffer.color
+        if colorAM == 0 {
+            view.backgroundColor = UIColor.green
+            name.textColor = UIColor.black
+            phone.textColor = UIColor.black
+            email.textColor = UIColor.black
+        }
+        if colorAM == 1 {
+            view.backgroundColor = UIColor.white
+            name.textColor = UIColor.black
+            phone.textColor = UIColor.black
+            email.textColor = UIColor.black
+        }
+        if colorAM == 2 {
+            view.backgroundColor = UIColor.black
+            name.textColor = UIColor.white
+            phone.textColor = UIColor.white
+            email.textColor = UIColor.white
+        }
+    }
+    
 }
