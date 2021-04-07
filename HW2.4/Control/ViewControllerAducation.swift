@@ -15,9 +15,13 @@ class ViewControllerAducation: UIViewController {
     @IBOutlet weak var university: UILabel!
     @IBOutlet weak var language1: UILabel!
     @IBOutlet weak var language2: UILabel!
+    @IBOutlet weak var forFix: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        forFix.text = String(BackgroundBuffer.color) + "d"
+        colorA = BackgroundBuffer.color
+        forFix.text = String(colorA)
         if colorA == 0 {
             view.backgroundColor = UIColor.green
             school.textColor = UIColor.black
