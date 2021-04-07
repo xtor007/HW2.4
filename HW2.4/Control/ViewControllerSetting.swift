@@ -11,35 +11,25 @@ class ViewControllerSetting: UIViewController {
 
     var nowColor = 0;
     
-    @IBOutlet weak var forFix: UILabel!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        forFix.text = String(nowColor)
-        forFix.text = "nmbjbvmbv"
         // Do any additional setup after loading the view.
     }
     
     
     @IBAction func toGreen(_ sender: Any) {
         nowColor = 0;
-        forFix.text = String(nowColor)
         BackgroundBuffer.color = 0
-        forFix.text = String(BackgroundBuffer.color) + "d"
     }
     
     @IBAction func toWhite(_ sender: Any) {
         nowColor = 1;
-        forFix.text = String(nowColor)
         BackgroundBuffer.color = 1
-        forFix.text = String(BackgroundBuffer.color) + "d"
     }
     
     @IBAction func toBlack(_ sender: Any) {
         nowColor = 2;
-        forFix.text = String(nowColor)
         BackgroundBuffer.color = 2
-        forFix.text = String(BackgroundBuffer.color) + "d"
     }
     
     

@@ -37,13 +37,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dHr-8R-aKa">
-                                <rect key="frame" x="67" y="494" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M5q-Ky-dKz">
                                 <rect key="frame" x="315" y="559" width="44" height="46"/>
                                 <state key="normal" image="repeat" catalog="system"/>
@@ -72,7 +65,6 @@
                     <tabBarItem key="tabBarItem" title="Про меня" image="person" catalog="system" id="vOO-tQ-1Y6"/>
                     <connections>
                         <outlet property="email" destination="N0M-7x-qoK" id="vTd-qz-zeX"/>
-                        <outlet property="forFix" destination="dHr-8R-aKa" id="JJ2-VT-Zpn"/>
                         <outlet property="name" destination="YUs-KL-mgZ" id="ltc-9w-gNL"/>
                         <outlet property="phone" destination="sTQ-Hx-czu" id="MGm-0j-ubg"/>
                     </connections>
@@ -144,13 +136,6 @@
                                     <action selector="toGreen:" destination="QNh-H2-el1" eventType="touchUpInside" id="ynd-jf-iLh"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d5P-y8-yMs">
-                                <rect key="frame" x="121" y="507" width="42" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="zLG-3O-MeH"/>
                         <color key="backgroundColor" systemColor="systemRedColor"/>
@@ -164,9 +149,6 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Настройки" image="gearshape" catalog="system" id="MjG-38-AIu"/>
-                    <connections>
-                        <outlet property="forFix" destination="d5P-y8-yMs" id="qPG-If-2bd"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kd6-Tc-AeG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="QNh-H2-el1" userLabel="Exit" sceneMemberID="exit"/>
@@ -208,13 +190,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rkN-qD-Ka8">
-                                <rect key="frame" x="77" y="494" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XLF-L2-wMN">
                                 <rect key="frame" x="315" y="554" width="44" height="46"/>
                                 <state key="normal" image="repeat" catalog="system"/>
@@ -244,7 +219,6 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Образование" image="graduationcap" catalog="system" id="Udy-zB-NVU"/>
                     <connections>
-                        <outlet property="forFix" destination="rkN-qD-Ka8" id="yEw-fn-fff"/>
                         <outlet property="language1" destination="TNb-EH-NJh" id="wRl-IS-E2I"/>
                         <outlet property="language2" destination="WLD-23-L8X" id="vmf-GS-I3T"/>
                         <outlet property="school" destination="mvj-JX-3e5" id="gHM-eY-Bju"/>

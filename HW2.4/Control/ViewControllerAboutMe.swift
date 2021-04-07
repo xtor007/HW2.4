@@ -15,13 +15,9 @@ class ViewControllerAboutMe: UIViewController {
     @IBOutlet weak var phone: UILabel!
     @IBOutlet weak var email: UILabel!
     
-    @IBOutlet weak var forFix: UILabel!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         colorAM = BackgroundBuffer.color
-        forFix.text = String(colorAM)
-        forFix.text = String(BackgroundBuffer.color) + "d"
         if colorAM == 0 {
             view.backgroundColor = UIColor.green
             name.textColor = UIColor.black
