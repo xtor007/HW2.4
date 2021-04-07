@@ -18,17 +18,17 @@ class ViewControllerSetting: UIViewController {
     
     
     @IBAction func toGreen(_ sender: Any) {
-        nowColor = 0;
+        //nowColor = 0;
         BackgroundBuffer.color = 0
     }
     
     @IBAction func toWhite(_ sender: Any) {
-        nowColor = 1;
+        //nowColor = 1;
         BackgroundBuffer.color = 1
     }
     
     @IBAction func toBlack(_ sender: Any) {
-        nowColor = 2;
+        //nowColor = 2;
         BackgroundBuffer.color = 2
     }
     
